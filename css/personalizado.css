@@ -1,0 +1,72 @@
+:root {
+    /* paleta de colores primarios */
+    --primary-100: #A66FA6;
+    --primary-200: #8A458A;
+    --primary-300: #6F256F;
+    --primary-400: #530E53;
+    --primary-500: #370037;
+}
+
+/* 
+UTILIDADES
+----------------------------------------------------------- */
+.txt-clr-100 {color: var(--primary-100);}
+.txt-clr-200 {color: var(--primary-200);}
+.txt-clr-300 {color: var(--primary-300);}
+.txt-clr-400 {color: var(--primary-400);}
+.txt-clr-500 {color: var(--primary-500);}
+
+.bg-clr-100 {background-color: var(--primary-100);}
+.bg-clr-200 {background-color: var(--primary-200);}
+.bg-clr-300 {background-color: var(--primary-300);}
+.bg-clr-400 {background-color: var(--primary-400);}
+.bg-clr-500 {background-color: var(--primary-500);}
+
+/* 
+AJUSTES GLOBALES
+----------------------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 1.2;
+}
+
+.navbar {
+    height: 6rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    font-weight: 500;
+    display: inline-block;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: var(--primary-200);
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--primary-400);
+    --bs-btn-border-color: var(--primary-400);
+    --bs-btn-hover-bg: var(--primary-500);
+    --bs-btn-disabled-bg: var(--primary-400);
+    --bs-btn-disabled-border-color: var(--primary-400);
+}
