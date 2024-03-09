@@ -40,25 +40,28 @@ h1 {
     line-height: 1.2;
 }
 
+/* Ajustar tamaño del navbar */
 .navbar {
     height: 6rem;
 }
 
-.nav-link:link,
-.nav-link:visited {
-    font-weight: 500;
-    display: inline-block;
-}
-
+/* cambio de color on hover de los nav-links */
 .nav-link:hover,
 .nav-link:active {
     color: var(--primary-200);
 }
 
+/* Cambiar color por defecto del btn-primary */
 .btn-primary {
     --bs-btn-bg: var(--primary-400);
     --bs-btn-border-color: var(--primary-400);
     --bs-btn-hover-bg: var(--primary-500);
     --bs-btn-disabled-bg: var(--primary-400);
     --bs-btn-disabled-border-color: var(--primary-400);
+}
+
+/* hacer visibles controles de carousel */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
 }

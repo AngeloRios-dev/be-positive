@@ -11,13 +11,13 @@
     
     <title>BePositive | Welcome</title>
 </head>
-<body>
+<body class="bg-light">
     
     <header class="bg-clr-500"> <!-- seccion header -->
         <!-- barra de navegacion -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand text-white fw-bold fs-1" href="index.html"><span class="txt-clr-100">BE</span>Positive</a>
+                <a class="navbar-brand text-light fw-bold fs-1" href="index.html"><span class="txt-clr-100">BE</span>Positive</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -66,7 +66,6 @@
             <div class="container">
                 <h2 class="h2 txt-clr-500 fw-bold text-center py-5">Articulos Destacados</h2>
             </div>
-
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-3 mb-3 mb-lg-0">
@@ -121,7 +120,7 @@
             </div>
         </section>
 
-        <section class="como-funciona">
+        <section class="bg-clr-100 my-5">
             <div class="container">
                 <h2 class="txt-clr-500 fw-bold text-center py-5">
                     Como funciona BE Positive
@@ -131,7 +130,7 @@
                         <div class="col-12 col-lg-6 mb-3">
                             <div class="d-flex flex-column">
                                 <span>
-                                    <i class="btn btn-primary rounded-circle bi bi-search"></i>
+                                    <i class="btn btn-primary txt-clr-100 rounded-circle bi bi-search"></i>
                                 </span>
                                 <h3 class="fw-bold txt-clr-500">Explora nuestro inventario</h3>
                                 <p>
@@ -142,7 +141,7 @@
                         <div class="col-12 col-lg-6 mb-3">
                             <div class="d-flex flex-column">
                                 <span>
-                                    <i class="btn btn-primary rounded-circle bi bi-sliders"></i>
+                                    <i class="btn btn-primary txt-clr-100 rounded-circle bi bi-sliders"></i>
                                 </span>
                                 <h3 class="fw-bold txt-clr-500">Personaliza tu camiseta</h3>
                                 <p>
@@ -153,7 +152,7 @@
                         <div class="col-12 col-lg-6 mb-3">
                             <div class="d-flex flex-column">
                                 <span>
-                                    <i class="btn btn-primary rounded-circle bi bi-cart"></i>
+                                    <i class="btn btn-primary txt-clr-100 rounded-circle bi bi-cart"></i>
                                 </span>
                                 <h3 class="fw-bold txt-clr-500">Haz tu pedido</h3>
                                 <p>
@@ -164,7 +163,7 @@
                         <div class="col-12 col-lg-6 mb-3">
                             <div class="d-flex flex-column">
                                 <span>
-                                    <i class="btn btn-primary rounded-circle bi bi-emoji-smile-fill"></i>
+                                    <i class="btn btn-primary txt-clr-100 rounded-circle bi bi-emoji-smile-fill"></i>
                                 </span>
                                 <h3 class="fw-bold txt-clr-500">BE Positive con tu camiseta</h3>
                                 <p>
@@ -178,19 +177,54 @@
         </section>
 
         <!-- Carousel -->
-        <section class="testimonios">
+        <section class="testimonios py-5">
             <div class="container">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="...">
+                      <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="./img/usuario-1.jpg" class="rounded-circle" width="128" height="128" alt="Foto de usuario que da su testimonio">
+                                    <h3 class="txt-clr-500 my-3">Akira B</h3>
+                                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem exercitationem eum similique doloribus minus cupiditate deserunt, praesentium tempore fugit distinctio neque sequi pariatur quidem nihil dicta quae est placeat tempora.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="./img/usuario-2.jpg" class="rounded-circle" width="128" height="128" alt="Foto de usuario que da su testimonio">
+                                    <h3 class="txt-clr-500 my-3">Amelia D</h3>
+                                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem exercitationem eum similique doloribus minus cupiditate deserunt, praesentium tempore fugit distinctio neque sequi pariatur quidem nihil dicta quae est placeat tempora.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="./img/usuario-3.jpg" class="rounded-circle" width="128" height="128" alt="Foto de usuario que da su testimonio">
+                                    <h3 class="txt-clr-500 my-3">Daiyu C</h3>
+                                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem exercitationem eum similique doloribus minus cupiditate deserunt, praesentium tempore fugit distinctio neque sequi pariatur quidem nihil dicta quae est placeat tempora.</p>
+                                </div>
+                            </div>
                         </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="./img/usuario-4.jpg" class="rounded-circle" width="128" height="128" alt="Foto de usuario que da su testimonio">
+                                    <h3 class="txt-clr-500 my-3">Noah R</h3>
+                                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem exercitationem eum similique doloribus minus cupiditate deserunt, praesentium tempore fugit distinctio neque sequi pariatur quidem nihil dicta quae est placeat tempora.</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -204,8 +238,48 @@
             </div>
         </section>
     </main>
-
-
+    <footer class="bg-clr-500 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 txt-clr-100">
+                    <h5 class="text-center text-lg-start">BePositive</h5>
+                    <p class="text-center text-lg-start">&copy; 2024 Todos los derechos reservados.</p>
+                </div>
+                <div class="col-12 col-lg-4 txt-clr-100">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link txt-clr-100" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-clr-100" href="./views/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-clr-100" href="./views/presupuesto.html">Presupuesto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-clr-100" href="./views/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4 txt-clr-100">
+                    <ul class="d-flex gap-3 justify-content-center justify-content-lg-end list-unstyled">
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter txt-clr-100 mx-1"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook txt-clr-100 mx-1"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin txt-clr-100 mx-1"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram txt-clr-100 mx-1"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- importando Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
