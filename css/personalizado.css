@@ -59,3 +59,19 @@ h1 {
     --bs-btn-disabled-bg: var(--primary-400);
     --bs-btn-disabled-border-color: var(--primary-400);
 }
+
+#lista-noticias li {
+    list-style: none;
+}
+
+#lista-noticias a {
+    text-decoration: none;
+    color: var(--primary-300);
+}
+
+#lista-noticias a:hover,
+#lista-noticias a:active {
+    text-decoration: none;
+    color: var(--primary-500);
+    font-weight: bold;
+}
