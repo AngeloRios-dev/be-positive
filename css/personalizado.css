@@ -59,9 +59,3 @@ h1 {
     --bs-btn-disabled-bg: var(--primary-400);
     --bs-btn-disabled-border-color: var(--primary-400);
 }
-
-/* hacer visibles controles de carousel */
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  filter: invert(1);
-}
