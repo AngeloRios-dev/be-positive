@@ -93,3 +93,26 @@ h1 {
     cursor: pointer;
     scale: 1.1;
 }
+
+.gen-link {
+    text-decoration: none;
+    color: var(--primary-500);
+}
+
+.gen-link:hover,
+.gen-link:active {
+    font-weight: bold;
+}
+
+.error-msg {
+    color: #FF3860;
+    font-size: 12px;
+}
+
+.exito {
+    border-color: #09C372;
+}
+
+.error {
+    border-color: #FF3860;
+}
