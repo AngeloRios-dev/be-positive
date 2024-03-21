@@ -39,7 +39,7 @@ const setExito = (elemento) => {
 // Funcion para validar el nombre
 const validarNombre = () => {
     const nombre = formElements.nombre;
-    const patron = /^[a-zA-Z]{4,15}$/;
+    const patron = /^[a-zA-Z ]{4,15}$/;
 
     if (patron.test(nombre.value)) {
         setExito(nombre);
@@ -53,7 +53,7 @@ const validarNombre = () => {
 // Funcion para validar los apellidos
 const validarApellidos = () => {
     const apellidos = formElements.apellidos;
-    const patron = /^[a-zA-Z]{4,40}$/;
+    const patron = /^[a-zA-Z ]{4,40}$/;
 
     if (patron.test(apellidos.value)) {
         setExito(apellidos);
