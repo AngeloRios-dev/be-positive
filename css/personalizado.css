@@ -116,3 +116,7 @@ h1 {
 .error {
     border-color: #FF3860;
 }
+
+#map{
+    height: 400px
+}
