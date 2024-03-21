@@ -1,4 +1,5 @@
-// seleccionando los elementos a validar
+// seleccionando los elementos a del formulario
+// para validar formulario:
 const nombre = document.getElementById('inputNombre');
 const apellidos = document.getElementById('inputApellidos');
 const email = document.getElementById('inputEmail');
@@ -103,4 +104,90 @@ email.addEventListener('blur', function() {
 // agregar un evento al campo para validar lo introducido
 telefono.addEventListener('blur', function() {
     validarTelefono(telefono)
+});
+
+// ************************************************
+// WIP: REORGANIZAR AL FINALIZAR ESTA PARTE
+// WIP: REORGANIZAR AL FINALIZAR ESTA PARTE
+// ************************************************
+// MOVER ESTO AL PRINCIPIO CUANDO TERMINE:
+// constantes para gestionar el valor del presupuesto 
+const material = document.getElementById('tipoMaterial');
+const plazoEnvio = document.getElementById('plazoEnvio');
+const textoDisenio = document.getElementById('textoDisenio');
+const colorPersonalizado = document.getElementById('colorPersonalizado');
+const tipografiaPersonalizada = document.getElementById('tipografiaPersonalizada');
+const donacionCaridad = document.getElementById('donacionCaridad');
+const cantidadCamisetas = document.getElementById('cantidadCamisetas');
+const presupuestoEstimado = document.getElementById('presupuestoEstimado');
+
+// funcion para calcular el descuento
+const calcularDescuento = (subTotal) => {
+    let costoEnvio = parseFloat(plazoEnvio.value);
+    if (!isNaN(costoEnvio) && costoEnvio > 1) {
+        descuento = subTotal - (subTotal * costoEnvio)
+        console.log(descuento);
+        return descuento; 
+    } else {
+        return 0;
+    }
+}
+
+
+// verificar cantidad minima de camisetas
+const verificarCantidad = () => {
+    let cantidad = parseFloat(cantidadCamisetas.value);
+    let materialSeleccionado = material.value
+    if (materialSeleccionado !== 'Elige...' && isNaN(cantidad)) {
+        cantidadCamisetas.value = 1;
+    } 
+}
+
+// funcion para calcular el presupuesto
+const calculaPresupeusto = () => {
+    verificarCantidad();
+    let subTotal = 0;
+    let descuento = 0;
+
+    // Obtener el valor del los elementos en el formulario
+    let valorMaterial = parseFloat(material.value);
+    let costoDisenio = textoDisenio.checked ? parseFloat(textoDisenio.value) : 0;
+    let costoColor = colorPersonalizado.checked ? parseFloat(colorPersonalizado.value) : 0;
+    let costoTipografia = tipografiaPersonalizada.checked ? parseFloat(tipografiaPersonalizada.value) : 0;
+    let donacion = donacionCaridad.checked ? parseFloat(donacionCaridad.value) : 0;
+    let cantidad = parseFloat(cantidadCamisetas.value);
+
+    // agregar el valor a la variable presupuesto 
+    // antes comprobando que sea numerico
+    if (!isNaN(valorMaterial)) subTotal += valorMaterial;
+    if (!isNaN(costoDisenio)) subTotal += costoDisenio;
+    if (!isNaN(costoColor)) subTotal += costoColor;
+    if (!isNaN(costoTipografia)) subTotal += costoTipografia;
+    if (!isNaN(donacion)) subTotal += donacion;
+    if (!isNaN(cantidad) && cantidad >= 1) subTotal *= cantidad;
+
+
+    descuento = calcularDescuento(subTotal);
+
+    let total = subTotal + descuento;
+    
+    presupuestoEstimado.value = total;
+}
+
+
+// bucle para agregar un event on change para los campos a calcular
+const sumarCampos = [
+    material,
+    plazoEnvio,
+    textoDisenio,
+    colorPersonalizado,
+    tipografiaPersonalizada,
+    donacionCaridad,
+    cantidadCamisetas,
+    presupuestoEstimado,
+];
+sumarCampos.forEach(campo => {
+    campo.addEventListener('change', () => {
+        calculaPresupeusto();
+    });
 });
